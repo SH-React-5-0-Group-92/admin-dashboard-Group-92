@@ -11,20 +11,22 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">Group92Admin</span>
+        <span className="logo">G92Admin</span>
       </div>
       <hr />
       <div className="center">
         <ul>
-          <p className="title">MAin</p>
+          <p className="title">Main</p>
           <li>
             <DashboardIcon className="icon" />
             <span> Dashboard</span>
           </li>
+          <p className="title">LISTS</p>
           <li>
             <AccountCircleIcon className="icon" />
-            <span> Users</span>
+            <span> Team Members</span>
           </li>
+
           <li>
             <ProductionQuantityLimitsIcon className="icon" />
             <span> Products</span>
@@ -33,10 +35,12 @@ const Sidebar = () => {
             <CreditCardOutlinedIcon className="icon" />
             <span> Orders</span>
           </li>
+          <p className="title">SERVICES</p>
           <li>
             <SettingsApplicationsIcon className="icon" />
             <span> Settings</span>
           </li>
+          <p className="title">CLIENTS</p>
           <li>
             <AccountCircleOutlinedIcon className="icon" />
             <span> Profile</span>
@@ -44,9 +48,6 @@ const Sidebar = () => {
           <li>
             <ExitToAppIcon className="icon" />
             <span> Logout</span>
-          </li>
-          <li>
-            <span> color options</span>
           </li>
         </ul>
       </div>
