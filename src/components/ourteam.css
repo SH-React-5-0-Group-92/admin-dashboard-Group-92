@@ -1,0 +1,38 @@
+.card-con{
+    display: grid;
+    grid-template-columns: auto auto;  
+}
+
+.card1{
+    background-color: #F6F7F9;
+}
+
+.container{
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.container1 p{
+    padding: 0px 50px 30px 50px;
+}
+
+.card-content{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px 30px;
+    box-shadow: 0 1em 1em rgba(0,0,0,.1);
+    background: #fff;
+    margin: 20px;
+}
+
+
+.card img{
+width: 150px;
+height: 150px;
+ border-radius: 50%;
+}
