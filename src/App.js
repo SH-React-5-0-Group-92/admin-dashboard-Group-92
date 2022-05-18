@@ -1,15 +1,24 @@
-import "./App.css";
+import Home from "./pages/home/Home";
+import Login from "./pages/login/Login";
+import Clients from "./pages/users/Clients";
+import New from "./pages/new/New";
+import Single from "./pages/single/Single";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
-import ProtectedRoutes from "./components/ProtectedRoutes";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route element={<ProtectedRoutes />} />
-          <Route path="/*" element={<Dashboard />} />
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="login" element={<Login />} />
+            <Route path="users">
+              <Route path="client" element={<Clients />} />
+            </Route>
+            <Route path="new" element={<New />} />
+            <Route path=":userId" element={<Single />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
