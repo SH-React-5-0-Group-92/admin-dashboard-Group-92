@@ -27,7 +27,7 @@ const Sidebar = () => {
           <p className="title">LISTS</p>
           <li>
             <AccountCircleIcon className="icon" />
-            <span> Team Members</span>
+            <span> Team</span>
           </li>
 
           <li>
