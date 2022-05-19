@@ -6,12 +6,15 @@ import CreditCardOutlinedIcon from "@mui/icons-material/CreditCardOutlined";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">G92Admin</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">G92Admin</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
