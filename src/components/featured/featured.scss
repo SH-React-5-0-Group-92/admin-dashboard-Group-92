@@ -24,33 +24,56 @@
     justify-content: center;
     gap: 15px;
 
-    .featuredChart{
+    .featuredChart {
       width: 100px;
       height: 100px;
     }
-  }
 
-  .title{
-    font-weight:500;
-    color: gray;
+    .title {
+      font-weight: 500;
+      color: gray;
+    }
 
-    .amount{
+    .amount {
       font-size: 30px;
     }
 
-    .desc{
+    .desc {
       font-weight: 300;
       font-size: 12px;
       color: gray;
       text-align: center;
     }
 
-    .summary{
+    .summary {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      .item {
+        text-align: center;
+
+        .itemTitle {
+          font-size: 14px;
+          color: gray;
+        }
+
+        .itemResult {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          font-size: 16px;
+
+          &.positive {
+            color: green;
+          }
+
+          &.negative {
+            color: red;
+          }
+        }
+      }
     }
   }
-
 }
