@@ -2,7 +2,7 @@ import "./navbar.scss";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -24,6 +24,11 @@ const Navbar = () => {
               alt=""
               className="avatar"
             />
+          </div>
+          <div className="signin">
+            <Link to="/signup">
+              <button> Sign up</button>{" "}
+            </Link>
           </div>
         </div>
       </div>
