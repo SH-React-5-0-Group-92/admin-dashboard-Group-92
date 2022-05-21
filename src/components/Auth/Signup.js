@@ -1,5 +1,5 @@
 import { ToastContainer, toast } from "react-toastify";
-import { useEffect, useState } from "react";
+import { React, useEffect, useState } from "react";
 import "./signup.scss";
 
 function Signup() {
