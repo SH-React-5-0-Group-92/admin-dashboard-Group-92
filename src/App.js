@@ -1,10 +1,11 @@
+import React from "react";
 import Home from "./pages/home/Home";
 //import Login from "./pages/login/Login";
 import Clients from "./pages/users/Clients";
 import New from "./pages/new/New";
 import Single from "./pages/single/Single";
 import Signup from "./components/Auth/Signup";
-import Sidebar from "./components/sidebar/Sidebar";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProtectedRoutes from "./components/ProtectedRoutes";
 import "react-toastify/dist/ReactToastify.css";
@@ -23,9 +24,7 @@ function App() {
             <Route path="new" element={<New />} />
             <Route path=":userId" element={<Single />} />
 
-            <Route element={<ProtectedRoutes />}>
-              <Route path="/*" element={<Sidebar />} />
-            </Route>
+            <Route element={<ProtectedRoutes />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
