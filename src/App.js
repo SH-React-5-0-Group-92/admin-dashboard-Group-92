@@ -5,6 +5,7 @@ import Clients from "./pages/users/Clients";
 import New from "./pages/new/New";
 import Single from "./pages/single/Single";
 import Signup from "./components/Auth/Signup";
+import Products from './pages/products/products'
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProtectedRoutes from "./components/ProtectedRoutes";
@@ -25,6 +26,7 @@ function App() {
             <Route path=":userId" element={<Single />} />
 
             <Route element={<ProtectedRoutes />}></Route>
+            <Route path="products" element={<Products />} />
           </Route>
         </Routes>
       </BrowserRouter>
