@@ -32,8 +32,10 @@ const Sidebar = () => {
           </li>
 
           <li>
-            <ProductionQuantityLimitsIcon className="icon" />
-            <span> Products</span>
+            <Link to = "/products">
+              <ProductionQuantityLimitsIcon className="icon" />
+              <span> Products</span>
+            </Link>
           </li>
           <li>
             <CreditCardOutlinedIcon className="icon" />
