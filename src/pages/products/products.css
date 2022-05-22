@@ -1,19 +1,18 @@
 body {
-    background-color: rgb(52, 66, 66);
-    color: rgb(255, 255, 255);
-    text-align: center;
+  /* background-color: rgb(52, 66, 66);*/
+  /* color: rgb(255, 255, 255);*/
+  text-align: center;
 }
 
-body a{
-    text-decoration: none;
+body a {
+  text-decoration: none;
 }
 
 .p-p {
-    border-bottom: 2px solid rgb(131, 132, 133);
-    font-size: 3rem;
-    font-weight: 700;
-    height: 8rem;
-    padding-top: 1.5rem;
-    margin-bottom: 2rem;
+  border-bottom: 2px solid rgb(131, 132, 133);
+  font-size: 3rem;
+  font-weight: 700;
+  height: 8rem;
+  padding-top: 1.5rem;
+  margin-bottom: 2rem;
 }
-
