@@ -1,0 +1,55 @@
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: rgb(116, 81, 212);
+    background-color: rgb(245, 239, 239);
+    margin: 1rem;
+    padding: 1rem;
+    width: 15rem;
+}
+
+.card h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(71, 81, 83);
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: .8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.product-img {
+    width: 10rem;
+    aspect-ratio: 1;
+    margin: .5rem auto;
+    border-radius: 50%;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: rgb(102, 74, 182);
+    width: 50%;
+    border-radius: 1rem;
+    padding: .2rem;
+    margin: .5rem auto;
+    cursor: all-scroll;
+}
+
+.buy-button p{
+    color: rgb(24, 24, 29);
+}
+
+@media screen, (max-width: 450px) { 
+    .card {
+        width: 22rem;
+    }
+}
