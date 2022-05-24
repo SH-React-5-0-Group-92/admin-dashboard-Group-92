@@ -1,6 +1,4 @@
 import React from "react";
-import "./chart.scss";
-
 import {
   AreaChart,
   Area,
@@ -9,6 +7,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import "./chart.scss";
 
 const data = [
   { name: "January", Total: 2210 },

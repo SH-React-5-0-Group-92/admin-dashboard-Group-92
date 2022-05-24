@@ -24,6 +24,7 @@ function App() {
             <Route path=":userId" element={<Single />} />
 
             <Route element={<ProtectedRoutes />}></Route>
+            <Route path="products" element={<Products />} />
           </Route>
         </Routes>
       </BrowserRouter>
