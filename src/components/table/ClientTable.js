@@ -35,8 +35,8 @@ function ClientList() {
         </TableHead>
         <TableBody>
           {clients
-            ? clients?.map((client) => (
-                <TableRow key={client.id}>
+            ? clients?.map((client, idx) => (
+                <TableRow key={idx}>
                   <TableCell className="tableCell">{client.id}</TableCell>
                   <TableCell className="tableCell">
                     <div className="cellWrapper">
