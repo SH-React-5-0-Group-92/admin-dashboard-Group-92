@@ -16,14 +16,16 @@ function ClientList() {
   React.useEffect(() => {
     fetch(url)
       .then((response) => response.json())
-
       .then((data) => setClients(data.data));
   }, []);
+  console.log(clients);
+
   return (
     <TableContainer component={Paper} className="table">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
+            <TableCell className="tableCell">ID</TableCell>
             <TableCell className="tableCell">Image</TableCell>
             <TableCell className="tableCell">Full Name</TableCell>
             <TableCell className="tableCell">Email</TableCell>
@@ -35,18 +37,21 @@ function ClientList() {
           {clients
             ? clients?.map((client, idx) => (
                 <TableRow key={idx}>
+                  <TableCell className="tableCell">{client.id}</TableCell>
                   <TableCell className="tableCell">
                     <div className="cellWrapper">
-                      <img src={client.img} alt="" className="image" />
+                      <img src={client.image} alt="" className="image" />
                     </div>
                   </TableCell>
                   <TableCell className="tableCell">
-                    <span>{client.firstname}</span>
-                    <span> {client.lastname}</span>
+                    <span>{client.contact.firstname}</span>
+                    <span> {client.contact.lastname}</span>
                   </TableCell>
                   <TableCell className="tableCell">{client.email}</TableCell>
                   <TableCell className="tableCell">{client.phone}</TableCell>
-                  <TableCell className="tableCell">{client.gender}</TableCell>
+                  <TableCell className="tableCell">
+                    {client.contact.gender}
+                  </TableCell>
                 </TableRow>
               ))
             : null}
