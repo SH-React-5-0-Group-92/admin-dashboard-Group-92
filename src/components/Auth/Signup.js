@@ -36,10 +36,10 @@ function Signup() {
     e.preventDefault();
     sessionStorage.setItem("userDetails", JSON.stringify({ ...form }));
 
-    toast.success.setItem(`Welcome to G92 Admin${form.name}`);
+    toast.success(`Welcome to G92 Admin ${form.name}`);
 
     setTimeout(() => {
-      window.loacation = "/";
+      window.location = "/";
     }, 5000);
   };
 
@@ -94,14 +94,11 @@ function Signup() {
               id="readTerms"
             />
             <p>
-              I have read, understood and i agree to the terms and conditions
+              I have read, understood and I agree to the terms and conditions.
             </p>
           </div>
           <button
             className={formValid ? "auth_signup-active" : "auth_signup-submit"}
-            // type="submit"
-            // id="actionBtn"
-            // disabled={!formValid}
           >
             Sign Up
           </button>
