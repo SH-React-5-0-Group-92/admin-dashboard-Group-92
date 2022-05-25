@@ -11,7 +11,7 @@ import Paper from "@mui/material/Paper";
 function ClientList() {
   const [clients, setClients] = React.useState([]);
 
-  const url = "https://fakerapi.it/api/v1/companies?_quantity=1";
+  const url = "https://fakerapi.it/api/v1/companies?_quantity=3";
 
   React.useEffect(() => {
     fetch(url)
@@ -36,7 +36,8 @@ function ClientList() {
         <TableBody>
           {clients
             ? clients?.map((client, idx) => (
-                <TableRow key={idx}>
+                <TableRow 
+                key={idx}>
                   <TableCell className="tableCell">{client.id}</TableCell>
                   <TableCell className="tableCell">
                     <div className="cellWrapper">
