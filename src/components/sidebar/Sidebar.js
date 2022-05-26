@@ -30,9 +30,8 @@ const Sidebar = () => {
             <AccountCircleIcon className="icon" />
             <span> Team</span>
           </li>
-
           <li>
-            <Link to = "/products">
+            <Link to="/products">
               <ProductionQuantityLimitsIcon className="icon" />
               <span> Products</span>
             </Link>
@@ -47,9 +46,12 @@ const Sidebar = () => {
             <span> Settings</span>
           </li>
           <p className="title">CLIENTS</p>
+
           <li>
-            <AccountCircleOutlinedIcon className="icon" />
-            <span> Profile</span>
+            <Link to="/client">
+              <AccountCircleOutlinedIcon className="icon" />
+              <span> Profile</span>
+            </Link>
           </li>
           <li>
             <ExitToAppIcon className="icon" />
