@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./pages/home/Home";
-//import Login from "./pages/login/Login";
+import Login from "./pages/login/Login";
 import Products from "./pages/products/products";
 import Signup from "./components/Auth/Signup";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -9,6 +9,12 @@ import "react-toastify/dist/ReactToastify.css";
 import ClientList from "./components/table/ClientTable";
 
 function App() {
+  const [token, setToken] = React.useState();
+
+  if (!token) {
+    return <Login setToken={setToken} />;
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
