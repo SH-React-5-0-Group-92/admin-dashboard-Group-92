@@ -7,9 +7,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProtectedRoutes from "./components/ProtectedRoutes";
 import "react-toastify/dist/ReactToastify.css";
 import ClientList from "./components/table/ClientTable";
+import useToken from "./components/Auth/useToken";
 
 function App() {
-  const [token, setToken] = React.useState();
+  const { token, setToken } = useToken();
 
   if (!token) {
     return <Login setToken={setToken} />;
